@@ -1,4 +1,6 @@
 import './App.css';
+import Frase from './componets/Frase';
+import HelloWorld from './componets/HelloWorld';
 
 function App() {
   const name = 'Wellington'
@@ -9,6 +11,8 @@ function App() {
       <h1>Alterando o JSX</h1>
       <p>Olá, {name}!</p>
       <img src={url} alt='Minha imagem'/>
+      < HelloWorld/>
+      < Frase/>
     </div>
   );
 }
