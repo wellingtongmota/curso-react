@@ -1,18 +1,21 @@
 import './App.css';
+import HelloWorld from './componets/HelloWorld'
+import Pessoa from './componets/Pessoa';
+import SayMyName from './componets/SayMyName';
 import Frase from './componets/Frase';
-import HelloWorld from './componets/HelloWorld';
 
 function App() {
-  const name = 'Wellington'
-  const url = "https://via.placeholder.com/150"
+  const nome = 'Maria'
 
   return (
     <div className="App">
-      <h1>Alterando o JSX</h1>
-      <p>Olá, {name}!</p>
-      <img src={url} alt='Minha imagem'/>
-      < HelloWorld/>
-      < Frase/>
+      {/* <HelloWorld /> */}
+      <Frase />
+      <Frase />
+      <SayMyName nome='Wellington'/>
+      <SayMyName nome='João' />
+      <SayMyName nome={nome} />
+      <Pessoa nome='Rodrigo' idade='28' profissao='Programador' foto='https://via.placeholder.com/150'/>
     </div>
   );
 }
